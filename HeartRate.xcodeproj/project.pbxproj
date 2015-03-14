@@ -13,6 +13,7 @@
 		87F3559B1AB2432800666FEB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87F3559A1AB2432800666FEB /* Images.xcassets */; };
 		87F3559E1AB2432800666FEB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87F3559C1AB2432800666FEB /* LaunchScreen.xib */; };
 		87F355AA1AB2432800666FEB /* HeartRateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F355A91AB2432800666FEB /* HeartRateTests.swift */; };
+		87F355B41AB2444200666FEB /* ALNDecibelChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87F355B31AB2444200666FEB /* ALNDecibelChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		87F355A31AB2432800666FEB /* HeartRateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HeartRateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87F355A81AB2432800666FEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87F355A91AB2432800666FEB /* HeartRateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateTests.swift; sourceTree = "<group>"; };
+		87F355B31AB2444200666FEB /* ALNDecibelChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ALNDecibelChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			children = (
 				87F355931AB2432800666FEB /* AppDelegate.swift */,
 				87F355951AB2432800666FEB /* ViewController.swift */,
+				87F355B31AB2444200666FEB /* ALNDecibelChartView.swift */,
 				87F355971AB2432800666FEB /* Main.storyboard */,
 				87F3559A1AB2432800666FEB /* Images.xcassets */,
 				87F3559C1AB2432800666FEB /* LaunchScreen.xib */,
@@ -161,6 +164,7 @@
 				TargetAttributes = {
 					87F3558D1AB2432800666FEB = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = J6TMXNN58Z;
 					};
 					87F355A21AB2432800666FEB = {
 						CreatedOnToolsVersion = 6.2;
@@ -212,6 +216,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87F355B41AB2444200666FEB /* ALNDecibelChartView.swift in Sources */,
 				87F355961AB2432800666FEB /* ViewController.swift in Sources */,
 				87F355941AB2432800666FEB /* AppDelegate.swift in Sources */,
 			);
@@ -272,6 +277,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -292,6 +298,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -314,6 +321,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_NS_ASSERTIONS = NO;
@@ -327,6 +335,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -336,9 +345,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = HeartRate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -346,9 +359,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = HeartRate/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -405,6 +422,7 @@
 				87F355AF1AB2432800666FEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87F355B01AB2432800666FEB /* Build configuration list for PBXNativeTarget "HeartRateTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +431,7 @@
 				87F355B21AB2432800666FEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
